@@ -1,331 +1,396 @@
-@media (min-width: 760px) {
-  /* Gantikan warna <h1> ke blue */
-  .header-mobile {
+.header-mobile {
     display: none;
-  }
+}
 
-  .navigation-mobile {
+.mobile {
     display: none;
-  }
+}
 
-  body {
+body {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
+}
 
-  ul,
-  a {
+ul,
+a {
     list-style: none;
     text-decoration: none;
     color: #3b3f43;
-  }
+}
 
-  .nav li {
-    padding: 15px 35px;
+.nav li {
     font-size: large;
     font-weight: 500;
-  }
+    padding: 15px 20px;
+}
 
-  .nav-icon {
+.nav-icon {
     margin: 0;
     padding: 0px 5px;
     display: inline-block;
-  }
+}
 
-  .tweet-button {
+.tweet-button {
     padding: 15px 40px;
     width: 60%;
     background-color: rgb(29, 155, 240);
     font-size: 15px;
+    text-align: center;
     color: white;
     border-radius: 45px;
     border-style: none;
     margin-top: 10px;
-  }
+}
 
-  .nav li:hover {
+.nav li:hover {
     background-color: rgba(0, 0, 0, 0.03);
     border-radius: 45px;
     width: 110px;
-  }
+}
 
-  .container {
+.container {
     padding: 0px 20px;
-  }
+    display: flex;
+}
 
-  .navigation {
-    width: 22%;
+.navigation {
+    flex: auto;
+    width: 20%;
     height: 100%;
-    display: inline-block;
+    left: 0;
     position: fixed;
     border-right: 1px solid #eff3f4;
-  }
+}
 
-  .fa-twitter {
+.fa-twitter {
     color: rgb(29, 155, 240);
-  }
+}
 
-  .posts {
-    width: 50%;
-    display: inline-block;
-    margin-left: 300px;
-  }
+.posts {
+    margin-left: 19%;
+    margin-right: 31%;
+    flex: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
 
-  .trendings {
+.trendings {
+    right: 0;
     position: fixed;
-    width: 20%;
+    flex: auto;
+    width: 30%;
     display: inline-block;
     margin-right: 0px;
     padding: 5px 10px;
     border-left: 1px solid #eff3f4;
     height: 100%;
-  }
+}
 
-  .header-post {
+.header-post {
     border-bottom: 1px solid #eff3f4;
-  }
+}
 
-  .search-trends {
+.search-trends {
     margin-top: 10px;
     padding: 10px 10px;
-    width: 90%;
+    width: 80%;
     border-style: none;
     border-radius: 45px;
     background-color: #f7f9f9;
-  }
+}
 
-  .trendings-section {
+.trendings-section {
     background-color: #f7f9f9;
     padding: 10px 0px;
-    width: 95%;
+    width: 85%;
     border-radius: 15px;
     margin-top: 30px;
-  }
+}
 
-  .trending-card h3,
-  h5 {
+.trending-card h3,
+h5 {
     margin: 2px 0px;
-  }
+}
 
-  .trending-card p,
-  h5 {
+.trending-card p,
+h5 {
     margin: 0px 0px;
     font-size: 0.8rem;
     color: #6e7c87;
     font-weight: 300;
-  }
+}
 
-  .trending-card {
+.trending-card {
     margin-bottom: 15px;
     padding: 0px 10px;
     width: 100%;
-  }
-
-  .trending-card:hover {
-    background-color: rgba(0, 0, 0, 0.04);
-    width: 92%;
-  }
-
-  .post-card {
-    border-bottom: 1px solid #eff3f4;
-  }
-
-  .profile-image {
-    display: inline-block;
-    vertical-align: top;
-    width: 12%;
-    height: 100%;
-    margin-left: 10px;
-  }
-
-  .profile-img {
-    width: 70px;
-    margin-top: 10px;
-    height: 100%;
-    border-radius: 50%;
-  }
-
-  .post-content {
-    width: 80%;
-    height: 100%;
-    display: inline-block;
-  }
-
-  .name {
-    margin: 5px 0px;
-  }
-
-  .username {
-    color: #536471;
-  }
-
-  .content {
-    margin: 0px;
-  }
-
-  .action-button {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0px;
-  }
-
-  .comment {
-    display: inline-block;
-    float: left;
-    margin-left: 20px;
-  }
-
-  .retweet {
-    display: inline-block;
-    font-size: 13px;
-  }
-
-  .like {
-    display: inline-block;
-    float: right;
-    margin-right: 20px;
-  }
-
-  .comment:hover {
-    color: #87cefa;
-    transition: all 0.4s ease-in-out;
-    transform: scale(1.1);
-  }
-
-  .retweet:hover {
-    color: #66ff4d;
-    transition: all 0.4s ease-in-out;
-    transform: scale(1.1);
-  }
-
-  .like:hover {
-    color: #ffaaaa;
-    transition: all 0.4s ease-in-out;
-    transform: scale(1.1);
-  }
 }
 
-@media (max-width: 760px) {
-  /* Gantikan warna <h1> ke green */
+.trending-card:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    width: 92%;
+}
 
-  ul,
-  a {
-    list-style: none;
-    text-decoration: none;
-    color: #3b3f43;
-  }
-  .header-mobile {
-    height: 40px;
-    text-align: center;
-    margin-top: 20px;
-    border-bottom: 1px solid #eff3f4;
-  }
-
-  .navigation-mobile {
-    background-color: white;
-    bottom: 0;
-    position: fixed;
+.post-card {
     width: 100%;
-    height: 60px;
-    padding: 5px 10px;
-    float: left;
-  }
+    flex: auto;
+    display: flex;
 
-  .navigation-mobile ul li {
-    display: inline-block;
-    padding: 0px 35px;
-  }
-
-  .icon-twitter {
-    color: rgb(29, 155, 240);
-  }
-
-  .navigation {
-    display: none;
-  }
-
-  .post-card {
     border-bottom: 1px solid #eff3f4;
-    margin-bottom: 10px;
-  }
+}
 
-  .header-post {
-    display: none;
-  }
-
-  .trendings {
-    display: none;
-  }
-
-  .posts {
-    padding: 0px 5px;
-    margin-top: 10px;
-    color: #536471;
-  }
-
-  .profile-image {
-    display: inline-block;
-    vertical-align: top;
-    width: 14%;
-    height: 100%;
+.profile-image {
+    text-align: center;
+    flex: auto;
+    width: 20%;
     margin-right: 10px;
-  }
-  .profile-img {
-    width: 70px;
-    border-radius: 50px;
-  }
-  .post-content {
+    flex: auto;
+}
+
+.profile-img {
+    display: inline;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.post-content {
     width: 80%;
     height: 100%;
     display: inline-block;
-    padding: 2px;
-  }
+}
 
-  .name {
-    margin: 0px;
-  }
-
-  .username {
-    color: #536471;
-  }
-
-  .action-button {
-    width: 100%;
-    text-align: center;
+.name {
     margin: 5px 0px;
-  }
+}
 
-  .comment {
-    display: inline-block;
-    float: left;
-    margin-left: 20px;
-  }
+.username {
+    color: #536471;
+}
 
-  .retweet {
-    display: inline-block;
+.content {
+    margin: 0px;
+}
+
+.action-button {
+    display: flex;
+    width: 100%;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.comment {
+    flex: auto;
+}
+
+.retweet {
+    flex: auto;
     font-size: 13px;
-  }
+}
 
-  .like {
-    display: inline-block;
-    float: right;
-    margin-right: 20px;
-  }
+.like {
+    flex: auto;
+}
 
-  .comment:hover {
+.comment:hover {
     color: #87cefa;
     transition: all 0.4s ease-in-out;
     transform: scale(1.1);
-  }
+}
 
-  .retweet:hover {
+.retweet:hover {
     color: #66ff4d;
     transition: all 0.4s ease-in-out;
     transform: scale(1.1);
-  }
+}
 
-  .like:hover {
+.like:hover {
     color: #ffaaaa;
     transition: all 0.4s ease-in-out;
     transform: scale(1.1);
-  }
+}
+
+/* @media (max-width: 1000px) {
+    .trendings {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .navigation {
+        width: 30%;
+        height: 100%;
+        flex: auto;
+        position: fixed;
+        border-right: 1px solid #eff3f4;
+    }
+
+    .posts {
+        width: 70%;
+        margin-left: 29%;
+        margin-right: 0%;
+        margin-top: 10px;
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+@media (max-width: 760px) {
+    /* Gantikan warna <h1> ke green */
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    ul,
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: #3b3f43;
+    }
+    .header-mobile {
+        z-index: 10;
+        display: flex;
+        height: 40px;
+        width: 100%;
+        flex: auto;
+        text-align: center;
+        margin-top: 20px;
+        border-bottom: 1px solid #eff3f4;
+    }
+
+    .icon-twitter {
+        flex: auto;
+    }
+
+    .mobile {
+        display: inline;
+        background-color: white;
+        bottom: 0;
+        position: fixed;
+        width: 90%;
+        height: 60px;
+    }
+
+    .mobile ul {
+        display: flex;
+        padding: 0px;
+    }
+
+    .mobile ul li {
+        text-align: center;
+        flex: auto;
+    }
+
+    .icon-twitter {
+        color: rgb(29, 155, 240);
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .post-card {
+        border-bottom: 1px solid #eff3f4;
+        margin-bottom: 10px;
+    }
+
+    .header-post {
+        display: none;
+    }
+
+    .trendings {
+        display: none;
+    }
+
+    .posts {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .post-card {
+        width: 100%;
+        flex: auto;
+        display: flex;
+    }
+
+    .profile-image {
+        text-align: center;
+        flex: auto;
+        width: 20%;
+        margin-right: 10px;
+        flex: auto;
+    }
+    .profile-img {
+        display: inline;
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .post-content {
+        flex: auto;
+        width: 80%;
+        padding: 2px;
+    }
+
+    .name {
+        margin: 0px;
+    }
+
+    .username {
+        color: #536471;
+    }
+
+    .action-button ul {
+        display: flex;
+        width: 100%;
+        margin: 5px 0px;
+        text-align: center;
+    }
+
+    .comment {
+        flex: auto;
+    }
+
+    .retweet {
+        flex: auto;
+        font-size: 13px;
+    }
+
+    .like {
+        flex: auto;
+    }
+
+    .comment:hover {
+        color: #87cefa;
+        transition: all 0.4s ease-in-out;
+        transform: scale(1.1);
+    }
+
+    .retweet:hover {
+        color: #66ff4d;
+        transition: all 0.4s ease-in-out;
+        transform: scale(1.1);
+    }
+
+    .like:hover {
+        color: #ffaaaa;
+        transition: all 0.4s ease-in-out;
+        transform: scale(1.1);
+    }
 }
