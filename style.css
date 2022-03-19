@@ -212,7 +212,7 @@ h5 {
     transform: scale(1.1);
 }
 
-/* @media (max-width: 1000px) {
+@media (max-width: 1000px) {
     .trendings {
         display: none;
     }
@@ -242,7 +242,7 @@ h5 {
         display: flex;
         flex-direction: column;
     }
-} */
+}
 
 @media (max-width: 760px) {
     /* Gantikan warna <h1> ke green */
